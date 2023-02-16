@@ -1,12 +1,12 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 // Just a comment to add something for commit
 const AddTaskForm = ({ addTask }) => {
-  const [value, setValue] = useState("");
+  const [value, setValue] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
     value && addTask(value);
-    setValue("");
+    setValue('');
   };
 
   return (
